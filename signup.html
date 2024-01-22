@@ -119,7 +119,8 @@
             }
 
             const password = document.getElementById("password").value;
-            const passPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])[-zA-Z!@#$%^&*]{6,}$/;
+            const passPattern = ^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$;
+
 
             if (!passPattern.test(password)) {
                 event.preventDefault();
